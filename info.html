@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <meta name="description" content="80Teeth Info - Policies, Shipping, and More">
+    <title>Info - 80Teeth</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <header>
+        <nav class="navbar container">
+            <a href="index.html" class="brand">
+                <img src="images/logo (4).png" alt="80Teeth Logo" class="logo">
+                <span>80Teeth</span>
+            </a>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html" class="nav-icon">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="products.html" class="nav-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="info.html" class="nav-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header container fade-in">
+        <h1>Information & Policies</h1>
+        <p>Learn more about our shipping, returns, and store policies.</p>
+    </section>
+
+    <section class="info-section container fade-in">
+        <h2>Shipping & Delivery</h2>
+        <p>We ship firearms and accessories nationwide in compliance with all applicable laws and regulations. 
+           Orders are typically processed within 2-3 business days. Shipping times may vary depending on your location 
+           and the availability of items.</p>
+
+        <h2>Returns & Exchanges</h2>
+        <p>Due to the nature of our products, we have a strict returns policy. If you receive a defective or incorrect 
+           item, please contact us immediately. We will work with you to make it right.</p>
+
+        <h2>Store Policies</h2>
+        <p>We comply with all federal, state, and local regulations regarding the sale and transfer of firearms. 
+           You must comply with all legal requirements and complete the necessary background checks and documentation 
+           before taking possession of a firearm.</p>
+    </section>
+
+    <footer class="footer fade-in">
+        <div class="container footer-content">
+            <p>&copy; <span id="year"></span> 80Teeth Firearms & Gunsmithing. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Preloader
+        window.addEventListener('load', () => {
+            document.querySelector('.preloader').classList.add('fade-out');
+            setTimeout(() => {
+                document.querySelector('.preloader').style.display = 'none';
+            }, 600);
+        });
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
