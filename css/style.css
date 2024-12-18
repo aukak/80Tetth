@@ -202,6 +202,13 @@ h2 {
     margin-bottom: 2rem;
 }
 
+p { 
+    text-align: center;
+}
+
+li { 
+    text-align: center;
+}
 .about p {
     line-height: 1.6;
     text-align: center;
